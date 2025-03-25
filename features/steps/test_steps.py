@@ -4,8 +4,8 @@ from behave import given, when, then
 
 @given("the user is logged in")
 def step_impl(context):
-    context.login_page.enter_login_username(os.getenv("TEST_USERNAME"))
-    context.login_page.enter_login_password(os.getenv("TEST_PASSWORD"))
+    context.login_page.enter_login_username(context.test_username)
+    context.login_page.enter_login_password(context.test_password)
     context.login_page.click_login_button()
     assert context.login_page.check_login_status()
 

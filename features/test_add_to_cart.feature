@@ -13,6 +13,6 @@ Feature: Shopping Cart
     Then the cart contains the item "<item_name>"
 
     Examples:
-      | item_name    |
-      | Sauce Labs Bolt T-Shirt  |
-      | Sauce Labs Bike Light |
+      | item_name               |
+      | Sauce Labs Bolt T-Shirt |
+      | Sauce Labs Bike Light   |
